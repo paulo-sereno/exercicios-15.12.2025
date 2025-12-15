@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        paises = new Array("Albânia", "Bolívia", "Canadá", "Dinamarca", "Etiópia", "Finlândia", "Alemanha", "Hungria", "Irlanda", "Japão", "Quênia");
+
+        for (i = 0; i < paises.length; i++) {
+            console.log(paises[i]);
+        }
+
+        const paisesLength = paises.length;
+        console.log(paisesLength);
+
+        const paisesAddInicio = paises.unshift("Portugal");
+        console.log(paises);
+
+        const paisesAddFinal = paises.push("Espanha");
+        console.log(paises);
+
+        const ultimosTres = paises.slice(-3);
+        console.log(ultimosTres);
+
+        const paisesLista = paises.join(" - ");
+        console.log(paisesLista);
+    </script>
+</body>
+</html>
