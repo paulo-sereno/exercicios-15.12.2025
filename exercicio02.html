@@ -8,14 +8,14 @@
 <body>
     <script>
         function valorFinal(preco, desconto) {
-            if (desconto < 10) {
+            if (desconto === 0) {
+                return preco * 2;
+            }            
+            else if (desconto < 10) {
                 return preco + (preco * desconto / 100);
             }
             else if (desconto >= 10 && desconto <= 30) {
                 return preco - (preco * desconto / 100);
-            }
-            else if (desconto === 0) {
-                return preco * 2;
             }
         };
     </script>
