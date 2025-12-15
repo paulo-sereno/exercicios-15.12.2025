@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function valorFinal(preço, desconto) {
+            if (desconto < 10) {
+                return preço + (preço * desconto / 100);
+            }
+            else if (desconto >= 10 && desconto <= 30) {
+                return preço - (preço * desconto / 100);
+            }
+            else if (desconto === 0) {
+                return preço * 2;
+            }
+        };
+    </script>
+</body>
+</html>
