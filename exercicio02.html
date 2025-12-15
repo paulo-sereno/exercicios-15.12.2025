@@ -7,15 +7,15 @@
 </head>
 <body>
     <script>
-        function valorFinal(preço, desconto) {
+        function valorFinal(preco, desconto) {
             if (desconto < 10) {
-                return preço + (preço * desconto / 100);
+                return preco + (preco * desconto / 100);
             }
             else if (desconto >= 10 && desconto <= 30) {
-                return preço - (preço * desconto / 100);
+                return preco - (preco * desconto / 100);
             }
             else if (desconto === 0) {
-                return preço * 2;
+                return preco * 2;
             }
         };
     </script>
